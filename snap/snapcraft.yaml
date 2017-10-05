@@ -1,9 +1,9 @@
 name: vsslagent
-version: '1.0' 
+version: '1.1' 
 summary: VSSL bling
 description: VSSL remote control features.  REST api.  Configuration assistance.
 grade: stable
-confinement: devmode
+confinement: strict
 apps:
    agent:
       command: main-linux
