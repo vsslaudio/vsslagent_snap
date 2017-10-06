@@ -10,22 +10,22 @@ apps:
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
-  agent-macos:
-      command: main-macos
-      daemon: simple
-      restart-condition: always
-      plugs: [network-bind]
-  agent-arm:
+   agent-arm:
       command: main
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
-  agent-win:
+   agent-macos:
+      command: main-macos
+      daemon: simple
+      restart-condition: always
+      plugs: [network-bind]
+   agent-win:
       command: main-win.exe
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
 parts:
   vssl:
-    source: ./bin/*
+    source: ./bin
     plugin: dump
