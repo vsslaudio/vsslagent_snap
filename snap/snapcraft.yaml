@@ -1,7 +1,7 @@
 name: vsslagent
-version: '1.1' 
-summary: VSSL bling
-description: VSSL remote control features.  REST api.  Configuration assistance.
+version: '1.2' 
+summary: VSSL REST api
+description: VSSL REST api, remote control, and health monitor
 grade: stable
 confinement: strict
 apps:
