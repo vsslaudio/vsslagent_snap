@@ -1,5 +1,5 @@
 name: vsslagent
-version: '1.2' 
+version: '1.3' 
 summary: VSSL REST api
 description: VSSL REST api, remote control, and health monitor
 grade: stable
@@ -9,7 +9,7 @@ apps:
       command: main-linux
       daemon: simple
       restart-condition: always 
-      plugs: [network]
+      plugs: [network-bind]
 parts:
   vssl:
     source: .
