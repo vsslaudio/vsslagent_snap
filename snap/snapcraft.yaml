@@ -16,7 +16,7 @@ apps:
       restart-condition: always 
       plugs: [network-bind]
   agent-arm:
-      command: main-arm
+      command: main
       daemon: simple
       restart-condition: always 
       plugs: [network-bind]      
