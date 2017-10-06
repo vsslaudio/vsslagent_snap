@@ -1,5 +1,5 @@
 name: vsslagent
-version: '1.4' 
+version: '1.4'
 summary: VSSL REST api
 description: VSSL REST api, remote control, and health monitor
 grade: stable
@@ -8,22 +8,22 @@ apps:
    agent-linux:
       command: main-linux
       daemon: simple
-      restart-condition: always 
+      restart-condition: always
       plugs: [network-bind]
   agent-macos:
       command: main-macos
       daemon: simple
-      restart-condition: always 
+      restart-condition: always
       plugs: [network-bind]
   agent-arm:
       command: main
       daemon: simple
-      restart-condition: always 
-      plugs: [network-bind]      
+      restart-condition: always
+      plugs: [network-bind]
   agent-win:
       command: main-win.exe
       daemon: simple
-      restart-condition: always 
+      restart-condition: always
       plugs: [network-bind]
 parts:
   vssl:
