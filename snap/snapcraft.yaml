@@ -1,5 +1,5 @@
 name: vsslagent
-version: '1.15'
+version: '1.16'
 summary: VSSL REST api
 description: VSSL REST api, remote control, and health monitor
 grade: stable
